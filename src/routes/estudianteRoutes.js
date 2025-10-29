@@ -7,11 +7,10 @@ estudianteRoutes.post("/", crearEstudiante);
 
 estudianteRoutes.get("/",mostrarTodos);
 
-estudianteRoutes.get("/multiples-cursos", estudiantesMasdeUnCurso);
-
 estudianteRoutes.get("/:id",buscarEstudianteId);
 
-estudianteRoutes.put("/", actualizarEstudiante);
+estudianteRoutes.put("/:id", actualizarEstudiante);
 
 estudianteRoutes.delete("/:id", borrarEstudiante);
 
+estudianteRoutes.get("/reportes/multiples-cursos", estudiantesMasdeUnCurso);

@@ -7,8 +7,6 @@ cursoRoutes.post("/", crearCurso)
 
 cursoRoutes.get("/", mostrarTodos);
 
-cursoRoutes.get("/total-estudiantes", totalEstudiantes);
-
 cursoRoutes.get("/:id", buscarCursoId);
 
 cursoRoutes.put("/", actualizarCurso);
@@ -17,3 +15,5 @@ cursoRoutes.put("/agregar-estudiante/:cursoId", agregarEstudiante)
 
 cursoRoutes.delete("/:id", eliminarCurso)
 
+
+cursoRoutes.get("/reportes/total-estudiantes", totalEstudiantes);
